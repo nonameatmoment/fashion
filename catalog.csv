@@ -1,0 +1,19 @@
+item_id,title,shop,price_usd,img_url,gender,style_tag,tone
+1,White Linen Shirt,LinenCo,49.99,https://picsum.photos/seed/White-Linen-Shirt/200,women,linen,light
+2,Blue Denim Jacket,UrbanWear,89.5,https://picsum.photos/seed/Blue-Denim-Jacket/200,women,denim,neutral
+3,Black Skinny Jeans,DenimHub,59.0,https://picsum.photos/seed/Black-Skinny-Jeans/200,women,slim,neutral
+4,Green Maxi Dress,BohoBoutique,72.25,https://picsum.photos/seed/Green-Maxi-Dress/200,women,boho,olive
+5,Red Graphic Tee,StreetMode,24.99,https://picsum.photos/seed/Red-Graphic-Tee/200,women,street,warm
+6,Beige Chino Pants,SmartCasual,54.75,https://picsum.photos/seed/Beige-Chino-Pants/200,men,classic,neutral
+7,Navy Blazer,FormalHub,110.0,https://picsum.photos/seed/Navy-Blazer/200,men,formal,cool
+8,Grey Hoodie,AthleisureX,39.99,https://picsum.photos/seed/Grey-Hoodie/200,men,athleisure,neutral
+9,Floral Summer Dress,FemmeFlow,65.5,https://picsum.photos/seed/Floral-Summer-Dress/200,women,floral,light
+10,White Sneakers,KickStart,59.95,https://picsum.photos/seed/White-Sneakers/200,men,athleisure,light
+11,Black Sneakers,SneakerHub,62.0,https://picsum.photos/seed/Black-Sneakers/200,men,athleisure,neutral
+12,Red Sneakers,KickStart,61.0,https://picsum.photos/seed/Red-Sneakers/200,women,athleisure,warm
+13,Navy Sneakers,UrbanKicks,60.0,https://picsum.photos/seed/Navy-Sneakers/200,men,athleisure,cool
+14,Beige Sneakers,SmartCasual,58.5,https://picsum.photos/seed/Beige-Sneakers/200,women,athleisure,neutral
+15,Olive Sneakers,BohoSneaks,57.25,https://picsum.photos/seed/Olive-Sneakers/200,women,athleisure,olive
+16,Grey Sneakers,AthleisureX,59.75,https://picsum.photos/seed/Grey-Sneakers/200,men,athleisure,neutral
+17,Pastel Pink Sneakers,FemmeFlow,63.0,https://picsum.photos/seed/Pastel-Pink-Sneakers/200,women,athleisure,light
+18,Mustard Sneakers,StreetMode,60.5,https://picsum.photos/seed/Mustard-Sneakers/200,women,athleisure,warm

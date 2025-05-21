@@ -79,7 +79,7 @@ if kw:
         first = personalised[personalised.title.str.contains(col_pref, case=False)]
         pick  = first.iloc[[0]] if not first.empty else personalised.sample(1)
         p = pick.iloc[0]
-        st.success(f"🎨 Recommended colour: **{col_pref}**")
+        st.success(f"🎨 رنگ کفش پیش‌نهادی ما به تو دوست عزیز: **{col_pref}**")
         st.image(p.img_url, width=160, caption=f"{p.title} — ${p.price_usd}")
 
         # ==== 3) Start trend loop once ====
@@ -93,18 +93,19 @@ if kw:
             st.session_state.looping = False
         else:
             st.divider()
-            st.info(f"🔥 *Trend pick — {st.session_state.trend_tag}*")
+            st.info(f"🔥 *به‌به ببین چه ترندی پیدا کردیم که به تو زیبا قامت میاد — {st.session_state.trend_tag}*")
             st.image(item.img_url, width=170,
                      caption=f"{item.title} — ${item.price_usd}")
 
             l_col, d_col = st.columns(2)
-            if l_col.button("👍  Like", key=f"like_{item.item_id}"):
-                st.success("OK, got it! 🙌")
+            if l_col.button("👍  دوست‌ش دارم", key=f"like_{item.item_id}"):
+                st.success("خوش‌ت اومده‌ها. در خریدهای بعدی هم از این استفاده می‌کنیم واسه‌ت! 🙌")
                 st.session_state.looping = False  # stop suggesting further items
-            if d_col.button("👎  Dislike", key=f"dislike_{item.item_id}"):
+            if d_col.button("👎  زشته مسخره", key=f"dislike_{item.item_id}"):
+                st.warning(" باشه عزیزم، سلیقه‌ت رو درک می‌کنم. دکمه دیسلایک رو بمال تا آپشن‌های بیش‌تری ببینی. اگر ارور داد بازم بمال")
                 st.session_state.trend_idx += 1   # move to next item
                 st.experimental_rerun()           # refresh UI to show next
     else:
         # user chose "No thanks" → clear any ongoing loop
-        st.info("No personal data provided – skipping trend suggestions.")
+        st.info("خودت نخواستی شخصی‌سازی کنم. بیا همینا رو بخر.")
         st.session_state.looping = False

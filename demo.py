@@ -57,7 +57,7 @@ if kw:
     st.subheader(f"ببین عمو چی پیدا کرده واسه‌ت : {len(results)} مورد")
     for _, r in results.iterrows():
         st.image(r.img_url, width=130)
-        st.caption(f"**{r.title}** — قیمت: ${r.price_usd}   {r.shop}---- در فروشگاه:")
+        st.caption(f"**{r.title}** — قیمت: ${r.price_usd} ----   {r.shop}: در فروشگاه")
 
     st.divider()
 

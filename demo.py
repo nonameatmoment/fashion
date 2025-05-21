@@ -93,7 +93,7 @@ if kw:
             st.session_state.looping = False
         else:
             st.divider()
-            st.info(f"🔥 *به‌به ببین چه ترندی پیدا کردیم که به تو زیبا قامت میاد — {st.session_state.trend_tag}*")
+            st.info(f"🔥 *به‌به ببین چه ترندی پیدا کردیم که به تو زیبا قامت میاد:{st.session_state.trend_tag}*")
             st.image(item.img_url, width=170,
                      caption=f"{item.title} — ${item.price_usd}")
 
